@@ -1,0 +1,32 @@
+<html>
+<head>
+	<h1>HTML Input AutoSuggest TypeAhead Lightweight Easy Javascript (JS) Library</h1>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="AutoSuggest.js"></script>
+<script>
+$(document).ready(function(){
+	var list=[{"value":"mahalingam"},
+	{"value":"mali"}
+	,{"value":"mahan"},
+	{"value":"mac"},
+	{"value":"mango"},
+	{"value":"sun"}
+	,{"value":"summer"}
+	,{"value":"supper"}];
+	var limit=10;
+	var appendTo="#iptBox";
+	var autoSuggestTo="#ipt"
+	$(appendTo).AutoSuggest(
+		{
+			"list":list,
+			"limit":limit,
+			"appendTo":appendTo
+		}
+	);
+})
+</script>
+</head>
+<body>
+<input id="iptBox" type="text"/>
+</body>
+</html>
